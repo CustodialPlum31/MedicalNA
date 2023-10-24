@@ -44,13 +44,6 @@ class Paciente(models.Model):
         nomPac =  models.CharField(max_length=20)
         apePac = models.CharField(max_length=20)
         direccion =  models.CharField(max_length=30)
-        edad = models.CharField(
-        max_length=3,
-        validators=[
-            MinValueValidator(1, message="La edad debe ser mayor o igual a 1."),
-            MaxValueValidator(120, message="La edad debe ser menor o igual a 120.")
-        ]
-    )
         correoPac = models.EmailField()
         contraPac = models.CharField(max_length=128)
         telPac = models.CharField(
