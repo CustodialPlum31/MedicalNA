@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Modulos.Clinica.views import formulario,contactar
+from Modulos.Clinica.views import formulario,contactar,home,user_login
+
 
 
 
@@ -24,5 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('formulario/',formulario),
     path('contactar/',contactar),
-    #path('',)
+    path('',home),
+    path('login/', user_login, name='login'),
 ]

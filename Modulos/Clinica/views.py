@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.conf import settings
 from django.core.mail import send_mail
+from django.contrib.auth import authenticate, login
+from .forms import LoginForm
 # Create your views here.
 
 def formulario(request):
@@ -16,4 +18,27 @@ def contactar(request):
         return render(request,"contactoExitoso.html")
     return render(request,"formulario.html")
         
+def home(request):
+    return render(request,'home.html')
+
+
+def user_login(request):
+    if request.method == 'POST':
+        form = LoginForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password']
+            user = authenticate(request, username=username, password=password)
+
+            if user is not None:
+                login(request, user)
+                # Redirige a la página deseada después del inicio de sesión
+                return redirect('nombre_de_la_vista_o_ruta')
+            else:
+                # El inicio de sesión falló
+                return render(request, 'login.html', {'form': form, 'error': 'Credenciales inválidas.'})
+    else:
+        form = LoginForm()
+
+    return render(request, 'login.html', {'form': form})
 
