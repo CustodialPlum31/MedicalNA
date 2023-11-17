@@ -21,6 +21,12 @@ def contactar(request):
 def home(request):
     return render(request,'home.html')
 
+def login(request):
+    return render(request,'index0.html')
+
+def register(request):
+    return render(request,'register.html')
+
 
 def user_login(request):
     if request.method == 'POST':
