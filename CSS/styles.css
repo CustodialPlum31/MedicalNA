@@ -1,0 +1,44 @@
+/* Estilos para el cuerpo y otros estilos ... */
+
+.container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  body {
+    background-color: #a7bed3;
+    font-family: 'Tinos', serif;
+  }
+  
+  .navbar {
+    font-family: 'Patua One', serif;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+  
+  .custom-carousel {
+    width: 50%; /* Ajusta el tamaño máximo del carrusel según sea necesario */
+    margin: 50px 0 0 25%; /* Ajusta los márgenes según sea necesario */
+    border-radius: 10px;
+  }
+  
+  .carousel-inner img {
+    width: 200px; /* Hace que las imágenes ocupen el 100% del ancho del contenedor */
+    height: 100%; /* Mantiene la proporción de aspecto original */
+  }
+
+
+  .carouselExampleSlidesOnly{
+    width: 50%; /* Ajusta el tamaño máximo del carrusel según sea necesario */
+
+  }
+
+  .card {
+    margin: 20px 10px 10px 20px; /* Ajusta los márgenes según sea necesario */
+  }
+  
+
+.carousel-item{
+    width: 10px;
+}
+

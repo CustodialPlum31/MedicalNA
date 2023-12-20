@@ -19,7 +19,7 @@ def contactar(request):
     return render(request,"formulario.html")
         
 def home(request):
-    return render(request,'home.html')
+    return render(request,'index.html')
 
 def login(request):
     return render(request,'login.html')

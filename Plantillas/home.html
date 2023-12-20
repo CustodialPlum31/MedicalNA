@@ -3,9 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedicalNA/Inicio</title>
+    <title>MedicalNA</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tinos&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="styles.css">
+
+    
 </head>
 <body>
-    <h2>Home de MedicalNA</h2>
+   
+    
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html">PR-CARE</a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#home">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>       
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Make an</span> Appointment</a>
+
+    </div>
+  </header><!-- End Header -->
+
+      <div id="carouselExampleIndicators" class="carousel slide custom-carousel" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="h1.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Una experiencia única</h4>
+              <p>Somos una institución medica con los mejores estándares de atención para la salud.</p>
+            </div> 
+          </div>
+          <div class="carousel-item">
+            <img src="h2.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Contamos con rigurosas medidas para prevenir enfermedades</h4>
+              <p>Implementamos un sistema de filtros con la más alta calidad, además reducimos el tiempo de espera en sala.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="h3.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>Sala de urgencias de alta eficacia</h4>
+              <p>Contamos con 50 camas en atención a urgencias así como especialistas certificados para cuidar tu vida y bienestar.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container mt-5">
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000"> <!-- Intervalo en milisegundos (4 segundos en este caso) -->
+          <div class="carousel-inner">
+            <!-- Primer grupo de 4 imágenes -->
+            <div class="carousel-item active">
+              <div class="d-flex">
+                <div class="w-25">
+                  <img src="cardiologia.png" class="d-block w-100" alt="Image 1">
+                  <p class="text-center">Cardiología</p>
+                </div>
+                <div class="w-25">
+                  <img src="cerebro.png" class="d-block w-100" alt="Image 2">
+                  <p class="text-center">Psicología</p>
+                </div>
+                <div class="w-25">
+                  <img src="endo.png" class="d-block w-100" alt="Image 3">
+                  <p class="text-center">Endocrinología</p>
+                </div>
+                <div class="w-25">
+                  <img src="examen-pelvico.png" class="d-block w-100" alt="Image 4">
+                  <p class="text-center">Ginecología</p>
+                </div>
+              </div>
+            </div>
+            <!-- Segundo grupo de 4 imágenes -->
+            <div class="carousel-item">
+              <div class="d-flex">
+                <div class="w-25">
+                  <img src="gastro.png" class="d-block w-100" alt="Image 5">
+                  <p class="text-center">Gastroenterologo</p>
+                </div>
+                <div class="w-25">
+                  <img src="interna.png" class="d-block w-100" alt="Image 6">
+                  <p class="text-center">Medicina Interna</p>
+                </div>
+                <div class="w-25">
+                  <img src="neumologia.png" class="d-block w-100" alt="Image 7">
+                  <p class="text-center">Neumología</p>
+                </div>
+                <div class="w-25">
+                  <img src="oncologia.png" class="d-block w-100" alt="Image 8">
+                  <p class="text-center">Oncología</p>
+                </div>
+              </div>
+            </div>
+            <!-- Agrega más grupos según sea necesario -->
+            <div class="carousel-item">
+              <div class="d-flex">
+                <div class="w-25">
+                  <img src="pediatria.png" class="d-block w-100" alt="Image 5">
+                  <p class="text-center">Pediatría</p>
+                </div>
+                <div class="w-25">
+                  <img src="plastica.png" class="d-block w-100" alt="Image 6">
+                  <p class="text-center">Cirugía platica</p>
+                </div>
+                <div class="w-25">
+                  <img src="neumologia.png" class="d-block w-100" alt="Image 7">
+                  <p class="text-center">Neumología</p>
+                </div>
+                <div class="w-25">
+                  <img src="urologia.png" class="d-block w-100" alt="Image 8">
+                  <p class="text-center">Urología</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+      <script src="script.js"></script>
 </body>
 </html>
